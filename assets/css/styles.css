@@ -1,0 +1,223 @@
+﻿/* 2rows + 3columns */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+h1 {
+	text-align: center;
+}
+
+/* COLUMN STRUCTURE */
+header {
+	height: 300px;
+	padding: 20px 250px;
+	
+}
+#content {
+	width: 270px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 600px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 270px;
+	padding: 5px 15px;
+	float: right;
+}
+
+.flex-column {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: right;
+	}
+
+	header {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+#content {
+	/****/
+}
+
+#CEN {
+	display:block;
+	border: none;
+	height: 1000px;
+	width: 270px;
+}
+
+#Anlts-Dash{
+	display:block;
+	border:none;
+	height:400px;
+	width:600px;
+}
+
+#sidebar {
+	/****/
+}
+
+
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+/* #pagewrap, header, #content, #middle, #sidebar {
+	border: solid 1px #ccc;
+}*/
+
+
+
+
+
+
+
+/* 2nd row 2nd column slideshow*/
+* {
+   margin: 0px;
+   padding: 0px;
+   outline: none;
+   text-decoration: none;
+   list-style: none;
+   border: 0px;
+   font-family: helvetica neue, helvetica, sans-serif;
+   font-smooth: always;
+}
+
+.wrapper {
+   width: 600px;
+   margin: 0px auto;
+}
+
+.slides {
+   width: 600px;
+   height: 300px;
+   overflow: hidden;
+}
+
+.slides .slide {
+   width: 600px;
+   height: 300px;
+   float: left;
+}
+
+.buttons li {
+   width: 15px;
+   height: 15px;
+   background: #aaa;
+   display: inline-block;
+   margin-right: 5px;
+}
+
+.buttons li.active {
+   background: #666; 
+}
+
+
+/*Slide imgs*/
+.slides div:nth-of-type(1) {
+   background-image: url('../image/2017 80.LDC_2017_v2.jpg'); 
+}
+.slides div:nth-of-type(2) {
+   background-image: url('../image/2017 68.Renewables_Compare_Jurisdiction_v2.jpg'); 
+}
+.slides div:nth-of-type(3) {
+   background-image: url('../image/2017 66.Reliability_2015 Times of Outage_101.jpg'); 
+}
+.slides div:nth-of-type(4) {
+   background-image: url('../image/2017 65.Enbridge_v4_ResConsumpbyLDC.jpg'); 
+}
+.slides div:nth-of-type(5) {
+   background-image: url('../image/2017 47.MEP_2017_v503_zoomed.jpg'); 
+}
+.slides div:nth-of-type(6) {
+   background-image: url('../image/2017 41.5EV within H1 by FSA_101.jpg'); 
+}
+.slides div:nth-of-type(7) {
+   background-image: url('../image/2016 59.LDC_Merged_Map_v7_FINAL.jpg'); 
+}
+.slides div:nth-of-type(8) {
+   background-image: url('../image/2016 51.LTEP_East Energy_201.jpg'); 
+}
+.slides div:nth-of-type(9) {
+   background-image: url('../image/2015 19.LRP2-105.jpg'); 
+}
+.slides div:nth-of-type(10) {
+   background-image: url('../image/2015 14.ICI_Trans_Letter_1.jpg'); 
+}
+.slides div:nth-of-type(11) {
+   background-image: url('../image/2015 4.GHG_102.jpg'); 
+}

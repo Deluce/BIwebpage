@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnF page - mapping, analytics, news</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/2,3dash.css">
+</head>
+
+<body>
+
+<!-- navigation bar -->
+    <div id="home">
+        <nav class="navbar navbar-default navigation-clean" style="background-color:rgb(57,62,55);">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand" href="#home" style="color:rgb(140, 219, 131);">BI INTELLIGENCE</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="http://www.energy.gov.on.ca/en/" style="color:rgb(137,194,136);">Ontario Ministry of Energy</a></li>
+                        <li role="presentation"><a href="https://www.bloomberg.com/energy" style="color:rgb(137,194,136);">Bloomberg </a></li>
+                        <li role="presentation"><a href="http://moenergy.maps.arcgis.com/apps/MapJournal/index.html?appid=0905e3acaf58478ebb7c50bb7df8d6c9" style="color:rgb(137,194,136);">LTEP Story Map</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="color:rgb(137,194,136);">TO GO<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a href="#home">Home</a></li>
+                                <li role="presentation"><a href="#mg">Map Gallary</a></li>
+                                <li role="presentation"><a href="#mg">Energy News</a></li>
+                                <li role="presentation"><a href="#mg">Save On Energy</a></li>
+                                <li role="presentation"><a href="#">Energy Dashboards</a></li>
+                                <li role="presentation"><a href="#alts">Analytics Dashboards</a></li>
+                                <li role="presentation"><a href="#">Analytics (Public Data)</a></li>
+                                <li role="presentation"><a href="#">Showcases</a></li>
+                                <li role="presentation"><a href="#">About Us</a></li>
+                           </ul>
+                        </li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <div></div>
+
+
+
+
+<br><br><br><br>
+<!-- 2 rows + 3 columns-->
+        
+		<header> <!-- 1st row -->
+		<div class="homedesc">
+			<h1>Strategic Policy and Analytics</h1><br>
+			<p><b>The Strategic Policy and Analytics (SPA)</b> Branch provides analysis, advice, liaison 
+			and policy development on energy issues, which require consultation with other provincial 
+			ministries and levels of government. The branch also provides central strategic policy 
+			advice for the ministry and works to promote policy integration and coordination.
+		<br><br id="mg">
+		The  Analytics and Finance (AnF) division manages the GIS, mapping and testing out innovative tools. 
+		The sofware we use --- ArcGIS, PowerBI, R, D3. </p>
+		</div>
+		</header>
+
+	<div class="flex-column">
+		<section id="content"> <!-- 2nd row, 1st column -->
+			<center>
+			    <h3>Energy News</h3>
+			    <iframe id="CEN" src="https://www.theglobeandmail.com/business/industry-news/energy-and-resources/"></iframe>
+		    </center>
+		</section>
+		
+		<section id="middle"> <!-- 2nd row, 2nd column -->
+			<center>
+			    <h3>Map Gallery</h3>
+			</center>
+			<div class="wrapper">
+  
+                <div class="slides">
+                    <div class="slidesContainer">
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+					<div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    </div>
+                </div>
+                <ul class="buttons" id="alts"></ul>
+            </div>
+		
+		<br><br><br> <!-- PowerBI -->
+		<center>
+		    <h3>Analytics dashboards built - Status of AnF projects</h3>
+		    <iframe id="Anlts-Dash" src="https://app.powerbi.com/view?r=eyJrIjoiMWQ1ZDg2NDEtZTUwNC00ZDY4LWE5MTUtZGY4NDQ2ZGViOWM1IiwidCI6ImNkZGMxMjI5LWFjMmEtNGI5Ny1iNzhhLTBlNWNhY2I1ODY1YyJ9" allowFullScreen="true"></iframe> 
+		</center>
+		
+		</section>
+
+
+
+
+		<aside id="sidebar"> <!-- 2nd row, 3rd column -->
+		    <section id="dashboard">
+			   <div class="panel colored green">
+			    <header>Hydro One Price</header>
+			    <p class="value">22.9</p>
+			    <footer>CAD</footer>
+			  </div>
+			  <div class="panel">
+			    <canvas id="sessionsPlayers"></canvas>
+			  </div>
+			  <div class="panel">
+			    <canvas id="sessionsTypes"></canvas>
+			  </div>
+			</section>
+		</aside>
+
+	</div>
+<br><br><br><br>
+
+
+
+
+
+<!-- footer -->
+	<div class="footer-basic" style="background-color:rgb(230,234,229);">
+		<footer>
+			<div class="social">
+				<a href="#"><i class="icon ion-social-instagram"></i></a>
+				<a href="https://twitter.com/ONenergy"><i class="icon ion-social-twitter"></i></a>
+				<a href="https://www.facebook.com/energyontario/"><i class="icon ion-social-facebook"></i></a>
+			</div>
+			<ul class="list-inline">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#">Services</a></li>                   <!-- add links later -->
+				<li><a href="#">About</a></li>                      <!-- add links later -->
+				<li><a href="#">Terms</a></li>                      <!-- add links later -->
+				<li><a href="#">Privacy Policy</a></li>             <!-- add links later -->
+			</ul>
+			<p class="copyright">Ontario Ministry of Energy <br>Strategic Policy and Finance Branch © 2018</p>
+		</footer>
+	</div>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="assets/js/smooth-scroll-to-anchor.js"></script>
+    <script src="assets/js/2,3dash.js"></script>
+
+</body>
+
+</html>
