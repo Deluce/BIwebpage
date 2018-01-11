@@ -1,4 +1,4 @@
-﻿/* 2rows + 3columns */
+/* 2rows + 3columns */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body { 
@@ -15,21 +15,29 @@ header {
 	padding: 20px 250px;
 	
 }
+
 #content {
-	width: 270px;
+	width: 28%;
+	height: 100%;
 	float: left;
 	padding: 5px 15px;
 }
+#CEN {
+	display:block;
+	border: none;
+	height: 100%;
+	width: 100%;
+}
 
 #middle {
-	width: 600px; /* Account for margins + border values */
+	width: 44%; /* Account for margins + border values */
 	float: left;
 	padding: 5px 15px;
 	margin: 0px 5px 5px 5px;
 }
 
 #sidebar {
-	width: 270px;
+	width: 28%;
 	padding: 5px 15px;
 	float: right;
 }
@@ -37,27 +45,37 @@ header {
 .flex-column {
 	display: flex;
 	flex-wrap: wrap;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 
 /************************************************************************************
 MEDIA QUERIES
 *************************************************************************************/
-/* for 980px or less */
-@media screen and (max-width: 980px) {
+/* for 1000px or less */
+@media screen and (max-width: 1000px) {
 	
-
 	#content {
-		width: 41%;
+		width: 40%;
 		padding: 1% 4%;
 	}
+	#CEN {
+		display:block;
+		border: none;
+		height: 100%;
+		width: 100%;
+    }
+
 	#middle {
-		width: 41%;
+		width: 50%;
 		padding: 1% 4%;
 		margin: 0px 0px 5px 5px;
 		float: right;
+	}
+	#gallery {
+		width: 70%;
+		height: 100%;
 	}
 	
 	#sidebar {
@@ -76,8 +94,14 @@ MEDIA QUERIES
 @media screen and (max-width: 600px) {
 
 	#content {
-		width: auto;
-		float: none;
+		width: 100%;
+		float: left;
+	}
+	#CEN {
+		display:block;
+		border: none;
+		height: 50%;
+		width: 100%;
 	}
 	
 	#middle {
@@ -106,30 +130,28 @@ MEDIA QUERIES
 		display: none;
 	}
 
-}
-
-#content {
-	/****/
-}
-
-#CEN {
+	#content {
+	    width: 100%;
+		float: left;
+	}
+	#CEN {
 	display:block;
 	border: none;
-	height: 1000px;
-	width: 270px;
-}
+	height: 40%;
+	width: 100%;
+    }
 
-#Anlts-Dash{
+	#Anlts-Dash{
 	display:block;
 	border:none;
 	height:400px;
 	width:600px;
-}
+	}
 
-#sidebar {
+	#sidebar {
 	/****/
+	}
 }
-
 
 header, #content, #middle, #sidebar {
 	margin-bottom: 5px;
@@ -187,7 +209,7 @@ header, #content, #middle, #sidebar {
 }
 
 
-/*Slide imgs*/
+/*Slide colours*/
 .slides div:nth-of-type(1) {
    background-image: url('../image/2017 80.LDC_2017_v2.jpg'); 
 }
